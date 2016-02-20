@@ -6,17 +6,18 @@ Groovy already supplements the standard Java library with lots of neat functions
 
 Gruava makes Guava's helper classes available as Groovy extension modules.
 This means you can now call a method like
-
-    import com.google.common.collect.Iterables;
-    [...]
-    Iterables.getOnlyElement(Iterable<T> iterable);
-
+```java
+import com.google.common.collect.Iterables;
+// ...
+Iterables.getOnlyElement(Iterable<T> iterable);
+```
 just like it was part of the standard library:
-
-    myIterable.getOnlyElement();
-    // or the Groovy way:
-    myIterable.onlyElement
-
+```java
+myIterable.getOnlyElement();
+// or the Groovy way:
+myIterable.onlyElement
+```
+ 
 ### Usage
 
 1. Add Gruava.
