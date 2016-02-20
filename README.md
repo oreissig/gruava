@@ -1,5 +1,7 @@
 # Gruava
 
+[![Build Status](https://travis-ci.org/oreissig/gruava.svg?branch=master)](https://travis-ci.org/oreissig/gruava)
+
 Groovy already supplements the standard Java library with lots of neat functions, but [Google Guava](https://github.com/google/guava) still has some additional tricks up its sleeve. Let's make use of those in a groovy way!
 
 Gruava makes Guava's helper classes available as Groovy extension modules.
