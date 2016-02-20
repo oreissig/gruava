@@ -30,6 +30,6 @@ myIterable.onlyElement
 
 ### Functionality
 
-You can see exactly which utility classes participate in the Gruava extension module by [inspecting its descriptor](https://github.com/oreissig/gruava/blob/master/src/main/resources/META-INF/services/org.codehaus.groovy.runtime.ExtensionModule).
+You can see exactly which utility classes participate in the Gruava extension module by [inspecting its descriptor](https://github.com/oreissig/gruava/blob/master/src/main/resources/META-INF/services/org.codehaus.groovy.runtime.ExtensionModule#L3).
 
-Be sure to check out Guava's own documentation for more information about the offered functionality, e. g. [Collection Utilities Explained](https://github.com/google/guava/wiki/CollectionUtilitiesExplained)
+Be sure to check out Guava's own documentation for more information about the offered functionality, e. g. [Collection Utilities Explained](https://github.com/google/guava/wiki/CollectionUtilitiesExplained).
