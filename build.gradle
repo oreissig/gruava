@@ -52,3 +52,7 @@ bintray {
         name = project.name
     }
 }
+
+bintrayUpload.onlyIf {
+    System.env.TRAVIS_JDK_VERSION == 'openjdk7' && !version.endsWith('SNAPSHOT')
+}
