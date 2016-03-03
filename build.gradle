@@ -1,7 +1,12 @@
+group = 'com.github.oreissig'
+// when changing the version, don't forget to adapt the extension module descriptor
+version = '19.0-SNAPSHOT'
+
 apply plugin: 'groovy'
+apply from: 'bintray-publish.gradle'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
