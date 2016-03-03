@@ -1,13 +1,9 @@
-plugins {
-    id 'com.jfrog.bintray' version '1.6'
-}
-
-// basic build config
 group = 'com.github.oreissig'
 // when changing the version, don't forget to adapt the extension module descriptor
 version = '19.0-SNAPSHOT'
 
 apply plugin: 'groovy'
+apply from: 'bintray-publish.gradle'
 
 repositories {
     jcenter()
@@ -16,43 +12,4 @@ repositories {
 dependencies {
     compile 'com.google.guava:guava:19.0'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
-}
-
-// maven publish to bintray
-apply plugin: 'maven-publish'
-
-task sourceJar(type: Jar) {
-    from sourceSets.main.allJava
-    tasks.assemble.dependsOn it
-    classifier 'sources'
-}
-
-task groovydocJar(type: Jar, dependsOn: groovydoc) {
-    from groovydoc.destinationDir
-    tasks.assemble.dependsOn it
-    classifier 'javadoc'
-}
-
-publishing {
-    publications {
-        maven(MavenPublication) {
-            from components.java
-            artifact sourceJar
-            artifact groovydocJar
-        }
-    }
-}
-
-bintray {
-    user = System.getenv('BINTRAY_USER')
-    key = System.getenv('BINTRAY_KEY')
-    publications = ['maven']
-    pkg {
-        repo = 'maven'
-        name = project.name
-    }
-}
-
-bintrayUpload.onlyIf {
-    System.env.TRAVIS_JDK_VERSION == 'openjdk7' && !version.endsWith('SNAPSHOT')
 }
