@@ -18,8 +18,8 @@ task sourceJar(type: Jar) {
     classifier 'sources'
 }
 
-task groovydocJar(type: Jar, dependsOn: groovydoc) {
-    from groovydoc.destinationDir
+task groovydocJar(type: Jar) {
+    from groovydoc
     tasks.assemble.dependsOn it
     classifier 'javadoc'
 }
