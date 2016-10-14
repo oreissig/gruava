@@ -2,6 +2,7 @@ moduleName=guava-module
 moduleVersion=19.0
 extensionClasses=\
     com.google.common.base.Strings,\
+    com.google.common.base.Preconditions,\
     com.google.common.base.Throwables,\
     com.google.common.collect.Constraints,\
     com.google.common.collect.Iterables,\
