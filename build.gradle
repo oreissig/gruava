@@ -11,5 +11,5 @@ repositories {
 
 dependencies {
     compile 'com.google.guava:guava:19.0'
-    testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4-rc-2'
 }
