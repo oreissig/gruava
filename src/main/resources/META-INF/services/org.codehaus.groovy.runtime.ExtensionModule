@@ -1,5 +1,5 @@
 moduleName=guava-module
-moduleVersion=19.0
+moduleVersion=20.0.0
 extensionClasses=\
     com.google.common.base.Strings,\
     com.google.common.base.Preconditions,\
@@ -17,6 +17,7 @@ extensionClasses=\
     com.google.common.collect.Sets,\
     com.google.common.collect.Tables,\
     com.google.common.io.ByteStreams,\
+    com.google.common.graph.Graphs,\
     com.google.common.io.CharStreams,\
     com.google.common.io.Closeables,\
     com.google.common.io.Files,\
