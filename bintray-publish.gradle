@@ -45,5 +45,5 @@ bintray {
 }
 
 bintrayUpload.onlyIf {
-    !version.endsWith('SNAPSHOT') && (!System.env.TRAVIS || System.env.TRAVIS_JDK_VERSION == 'openjdk7')
+    !version.endsWith('SNAPSHOT') && (!System.env.TRAVIS || System.env.TRAVIS_JDK_VERSION == 'oraclejdk8')
 }
