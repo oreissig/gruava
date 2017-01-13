@@ -4,17 +4,21 @@ extensionClasses=\
     com.google.common.base.Strings,\
     com.google.common.base.Preconditions,\
     com.google.common.base.Throwables,\
+    com.google.common.collect.Comparators,\
     com.google.common.collect.Constraints,\
     com.google.common.collect.Iterables,\
     com.google.common.collect.Iterators,\
     com.google.common.collect.Lists,\
     com.google.common.collect.MapConstraints,\
     com.google.common.collect.Maps,\
+    com.google.common.collect.MoreCollectors,\
     com.google.common.collect.Multimaps,\
     com.google.common.collect.Multisets,\
     com.google.common.collect.ObjectArrays,\
+    com.google.common.collect.Ordering,\
     com.google.common.collect.Queues,\
     com.google.common.collect.Sets,\
+    com.google.common.collect.Streams,\
     com.google.common.collect.Tables,\
     com.google.common.io.ByteStreams,\
     com.google.common.graph.Graphs,\
@@ -22,6 +26,7 @@ extensionClasses=\
     com.google.common.io.Closeables,\
     com.google.common.io.Files,\
     com.google.common.io.Flushables,\
+    com.google.common.io.MoreFiles,\
     com.google.common.io.Resources,\
     com.google.common.net.InetAddresses,\
     com.google.common.primitives.Booleans,\
@@ -32,6 +37,7 @@ extensionClasses=\
     com.google.common.primitives.Ints,\
     com.google.common.primitives.Longs,\
     com.google.common.primitives.Shorts,\
+    com.google.common.util.concurrent.MoreExecutors,\
     com.google.common.util.concurrent.Futures,\
     com.google.common.util.concurrent.Uninterruptibles,\
     java.nio.channels.Channels,\
