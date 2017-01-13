@@ -1,5 +1,5 @@
 moduleName=guava-module
-moduleVersion=20.0.1
+moduleVersion=21.0.0
 extensionClasses=\
     com.google.common.base.Strings,\
     com.google.common.base.Preconditions,\
