@@ -1,6 +1,6 @@
 group = 'com.github.oreissig'
 // when changing the version, don't forget to adapt the extension module descriptor
-version = '21.0.0'
+version = '21.0.1-SNAPSHOT'
 
 apply plugin: 'groovy'
 apply from: 'bintray-publish.gradle'
